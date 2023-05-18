@@ -1,0 +1,11 @@
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} !holgerpriess\.com$
+#RewriteRule ^ https://www.holgerpriess.com%{REQUEST_URI} [R=301,L]
+Options +SymLinksIfOwnerMatch 
+RewriteEngine On 
+ErrorDocument 404 /404.html
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . / [L]
+RewriteCond %{REQUEST_URI} !^/imprint [NC]
+#RewriteRule ^ / [L,R=301]

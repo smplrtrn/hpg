@@ -18,37 +18,39 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "Holger Priess Galerie"
+  : "Anett Stuth";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=OmKdoej5EJ">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=OmKdoej5EJ">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=OmKdoej5EJ" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#b6b6b6">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=OmKdoej5EJ">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=OmKdoej5EJ">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=OmKdoej5EJ">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=OmKdoej5EJ">
     <meta name="generator" content={Astro.generator} />
-
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+    <meta name="keywords" content="Holger Priess, Galerie, Hamburg, gallery, Kunsthandel, art consulting, zeitgenössische Kunst, contemporary art, Kunst kaufen, Kunst online, signiert, Sammler, Skulptur, Zeichnung, Malerei, Bilder kaufen, Graphik, Foto, drawing, painting, print, corporate collection, art collector, multiples, exhibitions, sculpture, Galerien in Hamburg, artinhamburg, hamburgart" />
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="Galerie für zeitgenössische Kunst in Hamburg, Kunsthandel, art consulting. Holger Priess berät Privatpersonen, Unternehmen und Institutionen zu allen Aspekten der Bildenden Kunst."
       canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Holger Priess Galerie - Anett Stuth`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Time Loops - Anett Stuth",
         },
       }}
     />
@@ -58,8 +60,6 @@ const makeTitle = title
     <slot />
     <Footer />
     <style is:global>
-      /* Improve Page speed */
-      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
         content-visibility: auto;
       }
