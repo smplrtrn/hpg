@@ -1,0 +1,225 @@
+---
+import Container from "@components/container.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/Layout.astro";
+import { Picture } from "astro:assets";
+import Sugimoto from "assets/nkhh_2024.jpg";
+import Stuth from "assets/anett-stuth_2022_ObjectZebras.jpg";
+import Grone from "assets/caroline-von-grone_2023_park-aussen-2.jpg";
+import Kluth from "assets/nina-kluth_2023-paralio-astros.jpg";
+import Pegel from "assets/claudia-pegel_2024_ohne-Titel-2x.jpg";
+---
+
+<Layout title="Exhibitions">
+  <Container>
+    <main class="py-9">
+      
+      <details>
+        <summary class="block cursor-pointer">
+          <div class="flex flex-col items-center pt-0 pb-5">
+            <Picture
+            src={Pegel}
+            alt="Ohne Titel - Claudia Pegel"
+            widths={[420, 740, 980]}
+            sizes="(max-width: 900px) 100%, 800px"
+            loading="eager"
+            formats={['avif', 'webp']}
+          />  
+            <div class="text-center">
+              <p class="text-xs mt-1 text-hpg-600">Claudia Pegel, ohne Titel, 2024, Tempera auf Leinwand, 33 x 38 cm</p>
+            </div>
+          </div>
+          <div class="block">
+            <h1
+            class="text-4xl lg:text-4xl xl:text-5xl text-center font-bold text-red-100 hover:text-red-100 leading-none md:tracking-tight">
+            Claudia Pegel
+            </h1>
+            <h2
+            class="text-3xl lg:text-3xl xl:text-4xl text-center mt-2 font-bold text-red-100 hover:text-red-100 md:tracking-tight">
+            Parade
+            </h2>
+          </div>
+        </summary>
+        <div class="mt-3 md:mt-1">
+          <p class="font-bold mt-5 mb-3 text-hpg-700">
+            Juli - August 2024</p>
+          <p class="text-hpg-700 text-base leading-normal">
+            Dem goetheschen „Mit den Augen zu sehn, was vor den Augen dir liegt“ folgend werden symbolisch, skurrile Szenerien von der Künstlerin im Bild fixiert. Dinge, die eigentlich wegkönnen, gewinnen Aufmerksamkeit und drängend sich als Motiv auf.</p>
+        </div>
+        <div class="my-3 md:my-1">
+          <p class="mt-4 text-hpg-700 text-base leading-normal">
+            Dem Beiläufigen Beachtung schenken, das hat Claudia Pegel schon vor gut 30 Jahren ins Zentrum ihrer Kunst gerückt. Realismus hat ein Rendezvous mit dem Abstrakten, in meist kleinen Formaten: Alltagsgegenständen wie Streichhölzer, Taschentücher oder Konfetti einen Auftritt gönnen, manchmal auch einen Schatten bescheren oder als Trompe-l’œil inszenieren, bevor sie weggeräumt werden.</p>
+        </div>
+      </details>
+      <details>
+        <summary class="block cursor-pointer">
+          <div class="flex flex-col items-center pt-24 pb-5">
+            <Picture
+            src={Kluth}
+            alt="Paralio Astros - Nina Kluth"
+            widths={[420, 740, 980]}
+            sizes="(max-width: 900px) 100%, 800px"
+            loading="eager"
+            formats={['avif', 'webp']}
+          />
+            <div class="text-center">
+              <p class="text-xs mt-1 text-hpg-600">Nina Kluth "Paralio Astros", 2023, Öl auf Nessel, 110 x 130 cm</p>
+            </div>
+          </div>
+          <div class="block">
+            <h1
+            class="text-4xl lg:text-4xl xl:text-5xl text-center font-bold hover:text-hpg-300 leading-nonet md:tracking-tight">
+              Nina Kluth
+          </h1>
+          <h2
+          class="text-3xl lg:text-3xl xl:text-4xl text-center mt-2 font-bold hover:text-hpg-300 leading-nonet md:tracking-tight">
+            leaf the logic
+        </h2>
+        </div>
+        </summary>
+        <div class="mt-3 md:mt-1">
+          <p class="font-bold mt-5 mb-3 text-hpg-700">
+            Februar - März 2024</p>     
+          <p class="text-hpg-700 text-base leading-normal">
+            Nina Kluths Malerei fasziniert durch ihre besondere Farbigkeit. Ausgehend von Natur- und Landschaftserleben schafft die Künstlerin auf großformatigen Bildern ins Abstrakte gehende Räume, die mitunter noch an einen konkreten Ort erinnern. Das lebendige Zusammenspiel von Farben und Formen pendelt zwischen dynamischen und beruhigten Räumen und fesselt die Betrachtenden.</p>
+        </div>
+      </details>
+      <details>
+        <summary class="block cursor-pointer">
+          <div class="flex flex-col items-center pt-24 pb-5">
+            <Picture
+              src={Stuth}
+              alt="Object: Zebras - Anett Stuth"
+              widths={[420, 740, 980]}
+              sizes="(max-width: 900px) 100%, 800px"
+              loading="eager"
+              formats={['avif', 'webp']}
+            />
+            <div class="text-center">
+              <p class="text-xs mt-1 text-hpg-600">Anett Stuth "Object: Zebras", aus der Serie "REMAINS", 2022, Fine Art Print 100x130 cm, Edition 6 Exemplare, und 160x208 cm, Edition 3 Exemplare</p>
+            </div>
+          </div>
+          <div class="block">
+            <h1
+              class="text-4xl lg:text-4xl xl:text-5xl text-center font-bold hover:text-hpg-300 leading-none md:tracking-tight">
+              Anett Stuth
+            </h1>
+            <h2
+              class="text-3xl lg:text-3xl xl:text-4xl text-center mt-2 font-bold hover:text-hpg-300 leading-none md:tracking-tight">
+              Time Loops
+            </h2>          
+          </div>
+        </summary>
+        <div class="mt-3 md:mt-1">
+          <p class="font-bold mt-5 mb-3 text-hpg-700">
+            Mai - Juli 2023</p>   
+          <p class="text-hpg-700 text-base leading-normal">
+            Die Galerie zeigt fotografische De-/Collagen, ausgehend von Elementen der biologischen Forschung in Vergangenheit und Gegenwart. Anett Stuth hat faszinierende Bilder von Naturobjekten geschaffen, die losgelöst von Zeit und Ort ikonisch die Schönheit und Erhabenheit aber auch die Zerstörung von Natur gleichermaßen fassen.
+          </p>
+        </div>
+        <div class="my-3 md:my-1">
+          <p class="text-hpg-700 text-base mt-4 leading-normal">
+            Anett Stuth (geboren 1965 in Leipzig) studierte an der Hochschule für Grafik und Buchkunst in Leipzig bei Arno Fischer und Timm Rautert. Sie ist eine wichtige Vertreterin künstlerischer Fotografie in Deutschland, ihre Arbeiten wurden in zahlreichen institutionellen Ausstellungen präsentiert.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary class="block cursor-pointer">
+          <div class="flex flex-col items-center pt-24 pb-5">
+            <Picture
+              src={Grone}
+              alt="Park außen II - Caroline von Grone"
+              widths={[420, 740, 980]}
+              sizes="(max-width: 900px) 100%, 800px"
+              loading="eager"
+              formats={['avif', 'webp']}
+            />
+            <div class="text-center">
+              <p class="text-xs mt-1 text-hpg-600">"Park außen II", 2020-2022, Öl auf Leinwand, zweiteilig, 210x302 cm</p>
+            </div>
+          </div>
+          <div class="block">
+            <h1
+              class="text-4xl lg:text-4xl xl:text-5xl text-center font-bold hover:text-hpg-300 leading-none md:tracking-tight">
+              Caroline von Grone
+            </h1>       
+            <h2
+              class="text-3xl lg:text-3xl xl:text-4xl text-center mt-2 font-bold hover:text-hpg-300 leading-none md:tracking-tight">
+              Park und Porträts
+            </h2>       
+          </div>
+        </summary>
+        <div class="mt-3 md:mt-1">
+          <p class="font-bold mt-5 mb-3 text-hpg-700">
+            September - Oktober 2023</p>
+          <p class="text-hpg-700 text-base leading-normal">
+            In den Parklandschaften Caroline von Grones verbinden sich die malerische Erforschung der Natur in städtischen Situationen mit der Lust am Erkennen abstrakter Formen und bildnerischer Konzeption.</p>
+          <p class="mt-4 md:mt-1 text-hpg-700 text-base leading-normal">
+            Die neuen großformatigen Porträts, ebenso "vor der Natur" gemalt, verfolgen den selben konzeptionellen Ansatz und faszinieren durch ihre Lebendigkeit und Präsenz.</p>
+        </div>
+        <div class="my-3 md:my-1">
+          <p class="text-hpg-700 text-base mt-4 leading-normal">
+            Die Künstlerin wurde 1963 in Hannover geboren. Sie hat an der GHK Kassel, der Hochschule für Bildende Künste Braunschweig und an der Kunstakademie Düsseldorf, zuletzt bei Jan Dibbets und Klaus Rinke, dessen Meisterschülerin sie war, studiert. Caroline von Grone lebt und arbeitet in Hamburg. 
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary class="block cursor-pointer">
+          <div class="flex flex-col items-center pt-24 pb-5">
+            <Picture
+              src={Sugimoto}
+              alt="Neue Kunst in Hamburg - Tatsuya Sugimoto"
+              widths={[420, 740, 980]}
+              sizes="(max-width: 900px) 100%, 800px"
+              loading="eager"
+              formats={['avif', 'webp']}
+            />
+            <div class="text-center">
+              <p class="text-xs mt-1 text-hpg-600">Abbildung: Tatsuya Sugimoto für Neue Kunst in Hamburg 2023</p>
+            </div>
+          </div>
+          <div class="block">
+            <h1
+            class="text-4xl lg:text-4xl xl:text-5xl text-center font-bold hover:text-hpg-300 leading-none md:tracking-tight">
+            Tatsuya Sugimoto
+            </h1>
+            <h2
+            class="text-3xl lg:text-3xl xl:text-4xl text-center mt-2 font-bold hover:text-hpg-300 md:tracking-tight">
+            Please ask me if you have any questions
+            </h2>
+          </div>
+        </summary>
+        <div class="mt-5">            
+          <h2
+            class="text-2xl lg:text-2xl xl:text-3xl text-center font-bold md:tracking-tight">
+              Neue Kunst in Hamburg e.V. 
+              <br />Reisestipendium 16
+          </h2>
+          <p class="font-bold my-3 text-center text-hpg-700">
+            kuratiert von <br />Fatima Hellberg (Bonner Kunstverein)</p>
+          <p class="font-bold text-center mt-2 mb-1 text-hpg-700">
+            Gemeinsame Ausstellungseröffnung der beteiligten Galerien auf der Fleetinsel<br />
+            Januar 2024</p>     
+          <p class="text-hpg-700 text-base mt-3 text-center leading-normal">
+            Elisa Barrera > Galerie Karin Guenther 
+            <br />Gerrit Frohne-Brinkmann > BittelvonJenisch 
+            <br />Tatsuya Sugimoto > Holger Priess Galerie
+            <br />Prateek Vijan > Produzentengalerie Hamburg
+            <br />Leyla Yenirce > Sfeir-Semler Gallery</p>
+          <p class="font-bold mt-5 mb-3 text-hpg-700">
+            Januar 2024</p>     
+          <p class="text-hpg-700 text-base leading-normal">
+            Im Zentrum der Praxis von Tatsuya Sugimoto stehen Ideen der Interaktion und des Engagements. Seine Arbeit bindet sorgsam choreografierte Verschiebungen sowie architektonische und soziale Veränderungen ein, die neuartige Begegnungen mit andernfalls Vertrautem hervorrufen. In seiner Ausstellung Please ask me if you have any questions in der Holger Priess Galerie steht der Austausch zwischen Betrachter*in und Galerist im Mittelpunkt. Im Laufe der Ausstellung wird Galerist Holger Priess den Besuchenden mit einer Frage und einem Angebot begegnen – dieselbe Frage, die den täglichen Galeriebetrieb bestimmen wird: Please ask me if you have any questions. Diese Einladung soll nun zu einem Teil des Werks selbst werden, wodurch der Fokus auf das Immaterielle und das Unsichtbare verschoben wird, und auf eine Reihe an Perspektiven, die durch diese Interaktion vermittelt werden. Die Galerieräume bleiben selbst leer, so dass sich die Spuren von Besuchenden und Überreste des täglichen Betriebs mit der Zeit ansammeln und als integraler Bestandteil des Ausstellungsgeschehens sichtbar werden.</p>
+        </div>
+        <div class="my-3 md:my-1">
+          <p class="text-hpg-700 text-base mt-4 leading-normal">      
+            Aufzeichnungen und Reflexionen über diese Begegnungen mit den Besuchenden, die vom Galeristen aufgezeichnet werden, finden sich schließlich als Skript in der Publikation zur Ausstellung, während einzeln nummerierte Ausstellungspläne für <span class="font-bold">Please ask me if you have any questions</span> als Edition präsentiert werden.</p>
+          <p class="text-hpg-700 text-base leading-normal mt-3">
+            Fatima Hellberg, Januar 2024</p>  
+        </div>
+      </details>
+
+    </main>    
+    <Logos />
+  </Container>
+</Layout>

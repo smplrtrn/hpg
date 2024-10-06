@@ -1,32 +1,53 @@
 ---
-import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/anett-stuth_2021_ObjectElephant.jpg";
+import { Picture } from "astro:assets";
+import Assig from "assets/martin-assig_2023_seelen215_kl.jpg";
 ---
 
-<main
-  class="grid lg:grid-cols-1 place-items-center pt-7 pb-8 md:pt-11 md:pb-17">
-  <div class="py-2 md:order-1 md:block">
+<main class="py-9">
+  <div class="flex flex-col items-center pt-0 pb-6">
     <Picture
-      src={heroImage}
-      alt="Object: Elephant - Anett Stuth"
-      widths={[400, 700, 900]}
-      aspectRatio="4:3"
+      src={Assig}
+      alt="Ohne Titel - Claudia Pegel"
+      widths={[420, 740, 980]}
       sizes="(max-width: 900px) 100%, 800px"
       loading="eager"
-      format="avif"
+      formats={['avif', 'webp']}
     />
-    <p class="text-xs mt-1 text-hpg-600">Anett Stuth 'Object: Elephant', aus der Serie 'REMAINS', 2004/2021,  Fine Art Print
-      100 x 130 cm, Edition 6 Exemplare, und 160 x 208 cm, Edition 3 Exemplare</p>
+    <div class="text-center">
+      <p class="text-xs mt-1 text-hpg-600">Martin Assig, Seelen #215, 2023, Gouacheschnitt, Wachs, Papier, 30,5 x 25 cm</p>
+    </div>
   </div>
-  <div class="pt-11 pb-4 md:order-2 md:block">
+  <div class="text-center pt-7 md:block">
     <h1
-      class="text-4xl lg:text-4xl xl:text-5xl font-bold md:tracking-tight">
-      Time Loops<br />Anett Stuth
+    class="text-4xl lg:text-4xl xl:text-5xl text-center font-bold hover:text-hpg-300 leading-none md:tracking-tight">
+    Martin Assig
     </h1>
-    <p class="text-sm font-bold mt-4 text-hpg-700 max-w-xl">
-      20. April - 1. Juli 2023</p>
-      <p class="text-sm mt-1 text-hpg-900 max-w-xl">Bis 3. 6. 2023 Donnerstag und Freitag 14 bis 18 Uhr<br /> und Samstag 12 bis 15 Uhr - sowie jederzeit nach Vereinbarung geöffnet </p>
-      <p class="text-sm mt-1 text-hpg-900 max-w-xl">Im Juni nach Vereinbarung geöffnet</p>
+    <h2
+    class="text-3xl lg:text-3xl xl:text-4xl text-center mt-2 font-bold hover:text-hpg-300 md:tracking-tight">
+    Ich soll dich schön grüßen
+    </h2>
+  </div>
+  <div class="mt-3">   
+    <p class="font-bold text-center mt-7 mb-5 text-hpg-700">
+      6. September - 19. Oktober 2024<br />
+      Do, Fr 14-18 Uhr, Sa 12-15 Uhr und nach Vereinbarung
+    </p>     
+  </div>
+  <div class="my-5 md:my-1">
+    <p class="text-hpg-700 text-base mt-4 leading-normal">
+      Ich freue mich, zu einer neuen Ausstellung mit Arbeiten von Martin Assig einladen zu können. Es werden aktuelle Arbeiten auf Papier und zwei großformatige Bilder auf Leinwand gezeigt.
+    </p>
+  </div>
+  <div class="my-3 md:my-1">
+    <p class="text-center text-hpg-700 text-base mt-4 leading-normal">
+      <a href="pdf/martin-assig_240929opm.pdf" download>Martin Assig PDF (16 MB)</a>
+    </p>
+  </div>
+  <div class="my-3 md:my-1">
+    <p class="text-center text-hpg-700 text-base mt-4 leading-normal">
+      Ausstellungshinweis:<br />
+      Martin Assig in der St. Matthäuskirche Berlin<br />
+      ab 13. September 2024
     </p>
   </div>
 </main>

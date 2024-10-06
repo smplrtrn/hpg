@@ -1,8 +1,8 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource/inter/variable.css";
 
 export interface Props {
   title: string;
@@ -19,11 +19,11 @@ const { title } = Astro.props;
 
 const makeTitle = title
   ? title + " | " + "Holger Priess Galerie"
-  : "Anett Stuth";
+  : "Claudia Pegel";
 ---
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" transition:animate="initial">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -38,6 +38,7 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <meta name="keywords" content="Holger Priess, Galerie, Hamburg, gallery, Kunsthandel, art consulting, zeitgenössische Kunst, contemporary art, Kunst kaufen, Kunst online, signiert, Sammler, Skulptur, Zeichnung, Malerei, Bilder kaufen, Graphik, Foto, drawing, painting, print, corporate collection, art collector, multiples, exhibitions, sculpture, Galerien in Hamburg, artinhamburg, hamburgart" />
+    <ViewTransitions />
     <SEO
       title={makeTitle}
       description="Galerie für zeitgenössische Kunst in Hamburg, Kunsthandel, art consulting. Holger Priess berät Privatpersonen, Unternehmen und Institutionen zu allen Aspekten der Bildenden Kunst."
@@ -46,11 +47,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Holger Priess Galerie - Anett Stuth`,
+          title: `Holger Priess Galerie`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Time Loops - Anett Stuth",
+          alt: "Ohne Titel - Claudia Pegel",
         },
       }}
     />
