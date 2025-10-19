@@ -1,32 +1,45 @@
 ---
-import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/anett-stuth_2021_ObjectElephant.jpg";
+import { Picture } from "astro:assets";
+import Jenssen from "assets/olav-christopher-jenssen_2025_synonym.jpg";
 ---
 
-<main
-  class="grid lg:grid-cols-1 place-items-center pt-7 pb-8 md:pt-11 md:pb-17">
-  <div class="py-2 md:order-1 md:block">
+<main class="py-9">
+  <div class="flex flex-col items-center pt-0 pb-6">
     <Picture
-      src={heroImage}
-      alt="Object: Elephant - Anett Stuth"
-      widths={[400, 700, 900]}
-      aspectRatio="4:3"
+      src={Jenssen}
+      alt="Olav Christopher Jenssen, Synonym, 2025, Einladung"
+      widths={[420, 740, 980]}
       sizes="(max-width: 900px) 100%, 800px"
       loading="eager"
-      format="avif"
+      formats={['avif', 'webp']}
     />
-    <p class="text-xs mt-1 text-hpg-600">Anett Stuth 'Object: Elephant', aus der Serie 'REMAINS', 2004/2021,  Fine Art Print
-      100 x 130 cm, Edition 6 Exemplare, und 160 x 208 cm, Edition 3 Exemplare</p>
+    <div class="text-center">
+      <p class="text-xs mt-1 text-hpg-600">Olav Christopher Jenssen, Synonym, 2025, Einladung Holger Priess Galerie</p>
+    </div>
   </div>
-  <div class="pt-11 pb-4 md:order-2 md:block">
+  <div class="text-center pt-7 md:block">
     <h1
-      class="text-4xl lg:text-4xl xl:text-5xl font-bold md:tracking-tight">
-      Time Loops<br />Anett Stuth
+    class="text-4xl lg:text-4xl xl:text-5xl text-center font-bold hover:text-hpg-300 leading-none md:tracking-tight">
+    Olav Christopher Jenssen
     </h1>
-    <p class="text-sm font-bold mt-4 text-hpg-700 max-w-xl">
-      20. April - 1. Juli 2023</p>
-      <p class="text-sm mt-1 text-hpg-900 max-w-xl">Bis 3. 6. 2023 Donnerstag und Freitag 14 bis 18 Uhr<br /> und Samstag 12 bis 15 Uhr - sowie jederzeit nach Vereinbarung geöffnet </p>
-      <p class="text-sm mt-1 text-hpg-900 max-w-xl">Im Juni nach Vereinbarung geöffnet</p>
+    <h2
+    class="text-3xl lg:text-3xl xl:text-4xl text-center mt-2 font-bold hover:text-hpg-300 md:tracking-tight">
+    Synonym
+    </h2>
+  </div>
+  <div class="mt-3">   
+    <p class="font-bold text-center mt-7 mb-5 text-hpg-700">
+      5. September - 18. Oktober 2025<br/>
+      Do, Fr 14 - 18 Uhr, Sa 12-15 Uhr und nach Vereinbarung</p>
+  </div>
+  <div class="my-5 md:my-1">
+    <p class="text-hpg-700 text-base mt-4 leading-normal">
+      Ich freue mich, zu einer neuen Ausstellung mit Arbeiten von Olav Christopher Jenssen einladen zu können.
+    </p>
+  </div>
+  <div class="my-3 md:my-1">
+    <p class="text-center font-bold text-hpg-600 hover:text-hpg-500 text-base mt-4 leading-normal">
+      <a href="/pdf/olav-christopher-jenssen_synonym-2025m.pdf" download>Ausgestellte Werke von Olav Christopher Jenssen</a> (PDF, 17MB)
     </p>
   </div>
 </main>
